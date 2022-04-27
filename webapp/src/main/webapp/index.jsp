@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-     <h1>New user :Registration for all Engineers </h1>
+     <h1>New user :Registration for DEVOPS Learning </h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
@@ -31,7 +31,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <h1> WELCOME TO DEVOPS WORLD </h1>
+   <h1> THANKS FOR REGISTRATION </h1>
 
 
 </form>
