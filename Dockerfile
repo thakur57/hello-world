@@ -1,4 +1,4 @@
 FROM tomcat
 RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
-COPY target/*.war /webapps
+COPY *.war /webapps
 
