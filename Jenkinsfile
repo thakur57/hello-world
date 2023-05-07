@@ -4,7 +4,7 @@ pipeline {
         maven 'maven'
     }
     environment {
-        AWS_ACCOUNT_ID="055409771122"
+        AWS_ACCOUNT_ID="797282116322"
         AWS_DEFAULT_REGION="us-east-1" 
         IMAGE_REPO_NAME="argocd"
         IMAGE_TAG="${BUILD_NUMBER}"
@@ -22,7 +22,7 @@ pipeline {
         
         stage('Build Code With Maven') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/kirdak123/hello-world.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/thakur57/hello-world.git']]])
                 sh "mvn -Dmaven.test.failure.ignore=true clean install"
             }
         }
